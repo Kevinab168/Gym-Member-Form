@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Gym Members Listing">
+  <meta name="keywords" content="Gym, Memberships, Listings">
+  <meta name="author" content="Kevin Abraham">
+
+  <!-- Skeleton CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+  <!-- Personal Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Gym Membership List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Members List</h1>
+    <form id="user-input">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="u-full-width">
+      </div>
+      <div>
+        <label for="weight">Weight</label>
+        <input type="number" name="weight" id="weight" class="u-full-width">
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" class="u-full-width">
+      </div>
+      <div>
+        <label for="membership">Membership</label>
+        <select name="membership" id="membership" class="u-full-width">
+          <option value="Bronze">Bronze</option>
+          <option value="Silver">Silver</option>
+          <option value="Gold">Gold</option>
+          <option value="Platinum">Platinum</option>
+        </select>
+      </div>
+      <div id='submit-btn'>
+        <input type="submit" value="Submit" id="submit" class="button u-full-width">
+      </div>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Weight</th>
+          <th>Age</th>
+          <th>Membership</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody id="user-details">
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Font Awsome Link -->
+  <script src="https://kit.fontawesome.com/163bdaf9ac.js" crossorigin="anonymous"></script>
+  <!-- Personal Script -->
+  <script src='app.js'></script>
+</body>
+</html>
